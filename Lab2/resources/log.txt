@@ -1,0 +1,68 @@
+февр. 15, 2022 8:06:25 PM ru.nsu.ccfit.morozov.calculator.Calculator main
+INFO: Calculator created
+февр. 15, 2022 8:06:25 PM ru.nsu.ccfit.morozov.calculator.Calculator main
+INFO: Opened file "resources/program.txt"
+февр. 15, 2022 8:06:25 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "DEFINE" succeeded
+февр. 15, 2022 8:06:25 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "DEFINE" succeeded
+февр. 15, 2022 8:06:25 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "DEFINE" succeeded
+февр. 15, 2022 8:06:25 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PUSH" succeeded
+февр. 15, 2022 8:06:25 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PUSH" succeeded
+февр. 15, 2022 8:06:25 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PUSH" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "+" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "+" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PUSH" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "MULTIPLY" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PUSH" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PLUS" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "SQRT" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PRINT" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PUSH" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "#" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "/" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PRINT" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PUSH" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "-" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PUSH" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PRINT" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "*" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PRINT" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "SQRT" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PRINT" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PUSH" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PUSH" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "PUSH" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "SAVE" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "LOAD" succeeded
+февр. 15, 2022 8:06:26 PM ru.nsu.ccfit.morozov.calculator.Calculator executeCommand
+INFO: Command "SAVE" succeeded

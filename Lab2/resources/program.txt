@@ -1,0 +1,32 @@
+DEFINE a 5.1
+DEFINE b 4,9
+DEFINE c 5
+PUSH a
+PUSH b
+PUSH c
++
++
+PUSH c
+MULTIPLY
+PUSH 6
+PLUS
+SQRT
+PRINT
+PUSH 3
+# smth
+/
+PRINT
+PUSH 3,a49
+-
+PUSH -1
+PRINT
+*
+PRINT
+SQRT
+PRINT
+PUSH 2
+PUSH 1
+PUSH 0
+SAVE resources/out.txt
+LOAD resources/out.txt
+SAVE resources/outx2.txt
