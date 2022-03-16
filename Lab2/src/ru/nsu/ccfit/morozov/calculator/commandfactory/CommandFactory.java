@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class CommandFactory {
 
-    private static CommandFactory instance = null;
+    private static volatile CommandFactory instance = null;
 
     private final Properties properties = new Properties();
 
