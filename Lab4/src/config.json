@@ -1,0 +1,59 @@
+{
+  "products": [
+    {
+      "name": "A",
+      "factoryCount": 3,
+      "consumerCount": 3,
+      "storageCapacityA": 250,
+      "storageCapacityB": 250,
+      "timeToCreate": 100,
+      "timeToConsume": 300,
+      "timeToLoad": 10,
+      "timeToUnload": 30,
+      "capacity" : 10
+    },
+    {
+      "name": "B",
+      "factoryCount": 4,
+      "consumerCount": 4,
+      "storageCapacityA": 280,
+      "storageCapacityB": 290,
+      "timeToCreate": 150,
+      "timeToConsume": 1000,
+      "timeToLoad": 50,
+      "timeToUnload": 5,
+      "capacity" : 7
+    }
+  ],
+  "stations": {
+    "distance": 500,
+    "capacityA": 2,
+    "capacityB": 3,
+    "waysA": 2,
+    "waysB": 2
+  },
+  "trains": [
+    {
+      "name": "T1",
+
+      "capacity": 1000,
+      "speed": 120,
+      "timeToCreate": 400,
+      "distanceToGo": 500
+    },
+    {
+      "name": "T2",
+      "capacity": 1500,
+      "speed": 100,
+      "timeToCreate": 500,
+      "distanceToGo": 6000
+    },
+    {
+      "name": "T3",
+      "capacity": 2000,
+      "speed": 90,
+      "timeToCreate": 600,
+      "distanceToGo": 5000
+    }
+  ]
+}
