@@ -22,7 +22,8 @@ public class Station {
     }
 
     private final int capacity;
-    private Integer taken = 0;
+    private int taken = 0;
+    private final Boolean docking = false;
 
 
     private final BlockingQueue<Storage> storagesDeque;
@@ -38,25 +39,25 @@ public class Station {
     }
 
     public void dock() throws InterruptedException {
-        synchronized (taken){
+        synchronized (docking){
             while(taken == capacity){
-                taken.wait();
+                docking.wait();
             }
             ++taken;
         }
     }
 
-    public synchronized void undock(){
-        synchronized (taken) {
+    public void undock(){
+        synchronized (docking) {
             if (taken == 0) {
                 return;
             }
-            taken.notify();
             --taken;
+            docking.notify();
         }
     }
 
-    public Storage getStorage() throws InterruptedException {
+    public synchronized Storage getStorage() throws InterruptedException {
         if (storagesDeque.isEmpty())
             return null;
         storagesDeque.put(storagesDeque.peek());

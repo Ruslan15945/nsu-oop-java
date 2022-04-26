@@ -13,8 +13,8 @@ public class Railway{
 
     private static final Logger logger = LogManager.getLogger(Railway.class);
 
-    private BlockingDeque<Road> ABRoads = new LinkedBlockingDeque<>();
-    private BlockingDeque<Road> BARoads = new LinkedBlockingDeque<>();
+    private final BlockingDeque<Road> ABRoads = new LinkedBlockingDeque<>();
+    private final BlockingDeque<Road> BARoads = new LinkedBlockingDeque<>();
 
 
     private final int roadsLength;

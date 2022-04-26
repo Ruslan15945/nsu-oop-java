@@ -75,10 +75,12 @@ public class Train implements Runnable{
 
     @Override
     public void run() {
-        logger.error("Train " + this.name + " is on");
+        logger.info("Train " + this.name + " is on");
         while (!Thread.currentThread().isInterrupted()) {
             try {
                 checkAmortization();
+                if (Thread.currentThread().isInterrupted())
+                    return;
                 Storage storage = depot.getStationA().getStorage();
                 String productName = storage.getProductName();
                 productInfo = depot.getProductInfo(productName);
@@ -104,7 +106,8 @@ public class Train implements Runnable{
                 logger.info("Train " + name + ": station B undocked");
 
                 checkAmortization();
-
+                if (Thread.currentThread().isInterrupted())
+                    return;
                 road = depot.getRailway().getBARoad();
                 travel(road);
                 depot.getRailway().freeBARoad(road);
@@ -127,9 +130,12 @@ public class Train implements Runnable{
     }
 
     private void travel(Road road) throws InterruptedException {
+        logger.info("Train " + name + ": travel start");
 
-        Thread.sleep( (int)(1000 * Math.ceil((double)roadLength /speed)));
-        amortization -= roadLength;
+        Thread.sleep( (int)(1000 * Math.ceil((double)road.getLength() /speed)));
+        amortization -= road.getLength();
+
+        logger.info("Train " + name + ": travel end");
     }
 }
 

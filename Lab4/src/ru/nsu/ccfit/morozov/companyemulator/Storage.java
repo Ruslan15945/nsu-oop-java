@@ -2,7 +2,6 @@ package ru.nsu.ccfit.morozov.companyemulator;
 
 
 
-
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -32,7 +31,7 @@ public class Storage{
         while (products.size() >= capacity)
             wait();
         products.add(item);
-        logger.info("Storage " + this.productName +id+": put ->" + products.size());
+        logger.info("Storage " + this.productName + id +": put ->" + products.size());
         notify();
     }
 
@@ -44,7 +43,7 @@ public class Storage{
         }
         Product item = products.getFirst();
         products.removeFirst();
-        logger.info("Storage " + this.productName +id+": get ->" + products.size());
+        logger.info("Storage " + this.productName + id +": get ->" + products.size());
         notify();
         return item;
 

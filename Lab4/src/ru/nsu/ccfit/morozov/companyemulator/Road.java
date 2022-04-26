@@ -1,6 +1,6 @@
 package ru.nsu.ccfit.morozov.companyemulator;
 
-public class Road implements Comparable<Road>{
+public class Road{
 
     private int length;
 
@@ -12,8 +12,4 @@ public class Road implements Comparable<Road>{
         return this.length;
     }
 
-    @Override
-    public int compareTo(Road o) {
-        return Integer.compare(this.getLength(), o.getLength());
-    }
 }

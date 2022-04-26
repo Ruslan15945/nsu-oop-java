@@ -21,10 +21,12 @@ public class Depot {
     public void newTrain(Train train) {
         Thread thread = new Thread(new Train(this, train.getConfig()));
         thread.start();
-        trains.put(train.getConfig().name, thread);
+        synchronized (this){
+            trains.put(train.getConfig().name, thread);
+        }
     }
 
-    public void createTrains() {
+    public synchronized void createTrains() {
         for (var item : config.getTrainsConfig().entrySet()){
             Thread thread = new Thread(new Train(this, item.getValue()));
             thread.start();
