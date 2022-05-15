@@ -8,9 +8,13 @@ import java.net.Socket;
 import java.util.Stack;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 public class Controller extends TimerTask {
 
+    ThreadPoolExecutor threadPool;
     private Game game;
     private Timer timer;
     Player[] players;
@@ -21,6 +25,7 @@ public class Controller extends TimerTask {
 
     public Controller(int maxPlayers){
         this.maxPlayers = maxPlayers;
+        threadPool = new ThreadPoolExecutor(maxPlayers,maxPlayers,0L, TimeUnit.SECONDS, new SynchronousQueue<>());
         game = new Game(this);
         players = new Player[maxPlayers];
         availableIds = new Stack<>();
@@ -43,7 +48,7 @@ public class Controller extends TimerTask {
                 PlayerView view = game.getPlayerView(i);
 
                 players[i].setPlayerView(view);
-                new Thread(players[i].getSender()).start();
+                threadPool.execute(players[i].getSender());
             }
         }
     }
@@ -57,7 +62,7 @@ public class Controller extends TimerTask {
 
     public void stop(){
         timer.cancel();
-
+        threadPool.shutdown();
         for(Player player : players){
             if (player == null)
                 continue;
